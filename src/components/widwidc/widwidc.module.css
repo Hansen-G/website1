@@ -1,0 +1,219 @@
+.WhenIDontCode {
+  margin-bottom: 15.6vw;
+}
+
+.Title {
+  width: 71vw;
+  margin: 0 auto 7.1vw auto;
+}
+
+.HobbiesContainer {
+  width: 53vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.Calligraphy,
+.Singing,
+.Crafts,
+.Painting {
+  border-radius: 12px;
+  position: relative;
+  display: inline-block;
+  transform-style: preserve-3d;
+}
+
+.Calligraphy {
+  width: 27.6vw;
+  height: 14.5vw;
+  bottom: 1.7vw;
+  left: 1vw;
+  z-index: 9;
+  background: url('../../assets/hobbies/calligraphy.JPG') center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.Singing {
+  width: 25.3vw;
+  height: 15vw;
+  z-index: 8;
+  background: url('../../assets/hobbies/singing.jpg') center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.Painting {
+  width: 26.3vw;
+  height: 17.8vw;
+  bottom: 6.8vw;
+  left: 6vw;
+  background: url('../../assets/hobbies/painting.JPG') center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.Crafts {
+  width: 14.9vw;
+  height: 14.9vw;
+  bottom: 3.2vw;
+  left: 2.7vw;
+  background: url('../../assets/hobbies/crafts.jpg') center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.Calligraphy::before,
+.Painting::before,
+.Crafts::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: translateZ(-1px);
+}
+
+.Calligraphy[mode='light']::before,
+.Painting[mode='light']::before,
+.Crafts[mode='light']::before {
+  background-color: #10506e;
+}
+
+.Calligraphy[mode='dark']::before,
+.Painting[mode='dark']::before,
+.Crafts[mode='dark']::before {
+  background-color:#cae1f9;
+}
+
+.Calligraphy::before {
+  border-radius: 12px 0 0 12px;
+  width: 6.6vw;
+  height: 15.8vw;
+  right: 22.55vw;
+  top: 2.2vw;
+}
+
+.Painting::before {
+  border-radius: 12px 0 0 12px;
+  width: 100%;
+  height: 15.8vw;
+  right: 1.5vw;
+  top: 6.8vw;
+}
+
+.Crafts::before {
+  width: 100%;
+  height: 6.7vw;
+  border-radius: 0 0 12px 12px;
+  right: 1.5vw;
+  top: 12.2vw;
+}
+
+.Calligraphy::after,
+.Singing::after,
+.Painting::after,
+.Crafts::after {
+  position: absolute;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2vw;
+}
+
+.Calligraphy::after {
+  content: 'Calligraphy';
+  bottom: 15.3vw;
+}
+
+.Singing::after {
+  content: 'Travelling';
+  bottom: 16.3vw;
+}
+
+.Painting::after {
+  content: 'Photography';
+  top: 19vw;
+}
+
+.Crafts::after {
+  content: 'Volunteering';
+  top: 15.5vw;
+}
+
+@media all and (max-width: 414px) {
+  .Title {
+    width: 88.2vw;
+    text-align: center;
+    margin: 22vw auto 18vw auto;
+  }
+
+  .HobbiesContainer {
+    width: 87vw;
+    height: auto;
+    margin: 0 auto 33vw auto;
+    position: relative;
+    left: 2vw;
+  }
+
+  .Calligraphy {
+    width: 45.2vw;
+    height: 23.75vw;
+    bottom: 1.7vw;
+    left: 1vw;
+  }
+
+  .Singing {
+    width: 41.5vw;
+    height: 24.6vw;
+  }
+
+  .Painting {
+    width: 43.3vw;
+    height: 28.7vw;
+    bottom: 9.8vw;
+    left: 9vw;
+  }
+
+  .Crafts {
+    width: 24.3vw;
+    height: 24.3vw;
+    bottom: 5.3vw;
+    left: 4.7vw;
+  }
+
+  .Calligraphy::before {
+    width: 11.5vw;
+    height: 25.9vw;
+    right: 37vw;
+  }
+
+  .Painting::before {
+    height: 33vw;
+    right: 2.5vw;
+  }
+
+  .Crafts::before {
+    width: 115%;
+    height: 18vw;
+    right: 1.8vw;
+    top: 19.5vw;
+  }
+
+  .Calligraphy::after,
+  .Singing::after,
+  .Painting::after,
+  .Crafts::after {
+    font-size: 6.9vw;
+  }
+
+  .Calligraphy::after {
+    bottom: 25.3vw;
+  }
+
+  .Singing::after {
+    bottom: 26.3vw;
+  }
+
+  .Painting::after {
+    top: 30.2vw;
+  }
+
+  .Crafts::after {
+    top: 26vw;
+  }
+}
